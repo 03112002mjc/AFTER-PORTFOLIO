@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    background-image: url("../img/technology.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+
+}
+header{
+      
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    z-index: 1000;
+    font-family:'Arvo', serif;
+}
+.container{
+    padding: 10px 10%;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5vh;
+    position: relative;
+    transition: .3s transform ease ;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(51, 187, 255);
+    transform: scale(1.3);
+    text-decoration: none;
+    
+}
+
+#contact-nav{
+    border: 1px solid #1ab2ff;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: #1ab2ff;
+    background: transparent;
+}
+
+.logo{
+    font-size: 5.5vh;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 1000;
+    margin-left: -50px;
+    text-shadow: .5vh .5vh .5vh #666666 ;
+}
+.logo:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.logo span{
+    color: #0099e6;
+    text-shadow: 0 0 50px #0099e6;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #0099e6;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline;
+    color: #0099e6;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.7);
+}
+.login-box{
+    position: relative;
+    width: 350px;
+    backdrop-filter: blur(20px);
+    border: 2px solid #1ab2ff;
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: #fff;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+}
+.login-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1ab2ff;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Poppins', sans-serif ;
+}
+.login-header span{
+    font-size: 25px;
+    color: #000000;
+}
+
+.login-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 #1ab2ff;
+}
+.login-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 #1ab2ff;
+}
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif ;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Hidden eye icon styles */
+.bx-hide {
+    display: none;
+}
+
+/* Show eye icon styles */
+.bx-show {
+    display: inline-block;
+}
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 12px;
+    background: transparent;
+    color: #fff;
+    padding-inline: 20px 50px;
+    border: 2px solid #666666;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif ;
+}
+#user{
+    margin-bottom: 10px;
+}
+.label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+}
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: #666666;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 10px;
+}
+.icon{
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 18px;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif ;
+}
+.input-submit{
+    width: 100%;
+    height: 50px;
+    background: #1ab2ff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Poppins', sans-serif ;
+}
+.input-submit:active{
+    background: #fff;
+    transform: scale(.1);
+}
+.register{
+    text-align: center;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 12px;
+}
+.register a{
+    font-weight: 500;
+    color: #1ab2ff;
+}
+nav .fa-solid{
+    display: none;
+   
+}
+
+
+
+
+
+
+/*FOR SMALL SCREEN*/
+
+
+
+
+@media only screen and (max-width: 564px) {
+    .wrapper{
+        padding: 20px;
+    }
+    .login-box{
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+    .front {
+        padding: 15px 0;
+        margin: 0;
+    
+    }
+    
+    .topnav{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+   
+    .logo {
+        font-size: 25px;
+        margin-left: 0px;
+    }
+
+
+    nav ul li {
+        margin-right: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font: 30px;
+        position: relative;
+        color: #fff;
+    }
+    nav ul{
+        background: rgba(38,38,38,0.95);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        
+    }
+    nav ul li a{
+        color: white;
+        font-size: 16px;
+    }
+    nav ul li a:hover{
+        color: rgb(51, 187, 255);
+         font-size: 18px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        
+    }
+   
+}
+

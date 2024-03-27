@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/4a9d01e598.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+    <script src="jscript.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+        
+            <nav class="topnav">  
+                <a href="#header" class="logo">M<span>J</span>C.Portfolio</a>
+                
+                    <ul id="sidemenu">
+                      
+                        <li><a href="##" onclick="navigateToSection('header')" style="--i:1;">Home</a></li>
+                        <li><a href="##" onclick="navigateToSection('about')" style="--i:2;">About</a></li>
+                        <li><a href="##" onclick="navigateToSection('services')" style="--i:3;">Services</a></li>
+                        <li><a href="##" onclick="navigateToSection('portfolio')" style="--i:4;">Portfolio</a></li>
+                        <li><a href="##" onclick="navigateToSection('contact')" style="--i:5;" id="contact-nav">Contact Me</a></li>
+                        <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>         
+                    </ul>
+                    
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>    
+            </nav>  
+                    
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <span>Login</span>
+            </div>
+            <div class="input_box">
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Username</label>
+                <i class="bx bx-user icon"></i>
+            </div>
+
+            <div class="input_box">
+                <input type="password" id="pass" class="input-field" required>
+                <label for="pass" class="label">Password</label>
+                <i class="bx bx-lock-alt icon"></i>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="bx bx-show"  id="eye-icon" ></i>
+                </span>
+            </div>
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember"> Remember me</label>
+                </div>
+                <div class="forget">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="input_box">
+                <input type="submit" class="input-submit" value="Login">
+            </div>
+            <div class="register">
+                <span>Don't have an account? <a href="#">Register</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
